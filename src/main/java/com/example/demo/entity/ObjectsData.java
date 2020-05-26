@@ -60,24 +60,24 @@ public class ObjectsData {
                 '}';
     }
 
-    public static ObjectsData createObject(ResultSet rs) {
-
-        ObjectsData objectsData = null;
-        try {
-            objectsData = new ObjectsData(rs.getInt("object_id"),
-                    rs.getString("object_image"),
-                    rs.getString("object_name"),
-                    rs.getString("object_address"),
-                    rs.getString("object_phone"),
-                    rs.getInt("object_region_id"),
-                   rs.getInt("object_type_id"),
-                    rs.getInt("object_subtype_id"));
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        return objectsData;
-    }
+//    public static ObjectsData createObject(ResultSet rs) {
+//
+//        ObjectsData objectsData = null;
+//        try {
+//            objectsData = new ObjectsData(rs.getInt("object_id"),
+//                    rs.getString("object_image"),
+//                    rs.getString("object_name"),
+//                    rs.getString("object_address"),
+//                    rs.getString("object_phone"),
+//                    rs.getInt("object_region_id"),
+//                   rs.getInt("object_type_id"),
+//                    rs.getInt("object_subtype_id"));
+//
+//        } catch (SQLException throwables) {
+//            throwables.printStackTrace();
+//        }
+//        return objectsData;
+//    }
 
 //    public static String getSelectSql() {
 //        return SELECT_QUERY;
