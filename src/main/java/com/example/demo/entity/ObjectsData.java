@@ -4,13 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
 
 @Getter
 @Setter
 @Entity
-@Table(name = "objects_data", schema = "bootcamp_final_project")
+//@Table(name = "objects_data", schema = "bootcamp_final_project")
 public class ObjectsData {
 
     protected ObjectsData() {
@@ -30,7 +29,7 @@ public class ObjectsData {
 
     @Id
     @Column
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.TABLE)
     private int id;
     @Column
     private String image;
@@ -94,4 +93,4 @@ public class ObjectsData {
 //    }
 
 
-}
+
