@@ -10,7 +10,7 @@ import java.sql.SQLException;
 @Getter
 @Setter
 @Entity
-//@Table(name = "objects_data")
+@Table(name = "objects_data", schema = "bootcamp_final_project")
 public class ObjectsData {
 
     protected ObjectsData() {
@@ -49,16 +49,18 @@ public class ObjectsData {
 
     @Override
     public String toString() {
-        return "Object{" +
+        return "ObjectsData{" +
                 "id=" + id +
+                ", image='" + image + '\'' +
                 ", name='" + name + '\'' +
-                ", address=" + address +
+                ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 ", region=" + region +
                 ", type=" + type +
                 ", subtype=" + subtype +
                 '}';
     }
+}
 
 //    public static ObjectsData createObject(ResultSet rs) {
 //
