@@ -8,7 +8,7 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "objects_data")
 //@Table(name = "objects_data", schema = "bootcamp_final_project")
 public class ObjectsData {
 
@@ -28,22 +28,22 @@ public class ObjectsData {
     }
 
     @Id
-    @Column
-    @GeneratedValue(strategy=GenerationType.TABLE)
+    @Column (name = "object_id")
+//    @GeneratedValue(strategy=GenerationType.TABLE)
     private int id;
-    @Column
+    @Column (name = "object_image")
     private String image;
-    @Column
+    @Column (name = "object_name")
     private String name;
-    @Column
+    @Column (name = "object_address")
     private String address;
-    @Column
+    @Column (name = "object_phone")
     private String phone;
-    @Column
+    @Column (name = "object_region_id")
     private int region; //was Region.class
-    @Column
+    @Column (name = "object_type_id")
     private int type; // was Type.class
-    @Column
+    @Column (name = "object_subtype_id")
     private int subtype; // was Subtype.class
 
     @Override
